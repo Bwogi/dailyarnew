@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Duty Management System",
+  title: "Daily Activity & Duty Management System",
   description:
     "Streamline your security operations with our comprehensive duty logging and incident reporting system.",
 };
