@@ -16,7 +16,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl text-bold mb-6">
+          <h1 className="text-4xl text-indigo-600 text-bold mb-6">
             Daily Activity Reports & Duty Management System
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -33,7 +33,7 @@ export default function LandingPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="px-8 transition-colors"
+                className="px-8 bg-indigo-400 text-white transition-colors"
               >
                 View Reports
                 <FileText className="ml-2 h-5 w-5" />
@@ -130,18 +130,18 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
+      <section className="py-20 px-4 bg-gradient-to-b from-blue-100 to-indigo-100 ">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl mb-6">Ready to Get Started?</h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-xl text-gray-600 mb-8 opacity-90">
             Start managing your security operations more effectively today.
           </p>
           <div className="flex justify-center gap-4">
             <Link href="/dashboard">
               <Button
                 size="lg"
-                variant="secondary"
-                className="px-8 hover:bg-white hover:text-blue-600 transition-colors"
+                variant="outline"
+                className="bg-indigo-400 text-white px-8"
               >
                 Access Dashboard
                 <LayoutDashboard className="ml-2 h-5 w-5" />
@@ -151,7 +151,7 @@ export default function LandingPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="px-8 bg-transparent border-white text-white hover:bg-white hover:text-blue-600 transition-colors"
+                className="px-8 bg-transparent border-white bg-white text-blue-600 transition-colors"
               >
                 View Reports
                 <FileText className="ml-2 h-5 w-5" />
@@ -165,8 +165,8 @@ export default function LandingPage() {
       <footer className="py-8 text-center text-gray-600 border-t">
         <div className="max-w-7xl mx-auto px-4">
           <p>
-            © {new Date().getFullYear()} Duty Management System. All rights
-            reserved.
+            © {new Date().getFullYear()} Activity Report & Duty Management
+            System. All rights reserved.
           </p>
         </div>
       </footer>
