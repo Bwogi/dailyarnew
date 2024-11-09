@@ -7,13 +7,10 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Daily Activity & Duty Management",
-  description: "Security officer duty & activity reporting system",
+  title: "Duty Management System",
+  description:
+    "Streamline your security operations with our comprehensive duty logging and incident reporting system.",
 };
-
-// interface RootLayoutProps {
-//   children: React.ReactNode;
-// }
 
 export default function RootLayout({
   children,
