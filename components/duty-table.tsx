@@ -137,7 +137,7 @@ export function DutyTable({ refreshTrigger }: DutyTableProps) {
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              Duty Logs
+              Daily Logs
             </CardTitle>
             <div className="flex space-x-3">
               <div className="relative w-72">

@@ -18,8 +18,8 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">
-            Duty Management Dashboard
+          <h1 className="text-2xl text-gray-900">
+            Daily Activity Report Dashboard
           </h1>
           <div className="flex gap-2">
             <Link href="/reports">
