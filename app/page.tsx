@@ -136,7 +136,7 @@ export default function LandingPage() {
           <p className="text-xl text-gray-600 mb-8 opacity-90">
             Start managing your security operations more effectively today.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             <Link href="/dashboard">
               <Button
                 size="lg"
