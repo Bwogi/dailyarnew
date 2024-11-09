@@ -11,11 +11,15 @@ export const metadata: Metadata = {
   description: "Security officer duty & activity reporting system",
 };
 
-interface RootLayoutProps {
-  children: React.ReactNode;
-}
+// interface RootLayoutProps {
+//   children: React.ReactNode;
+// }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className={inter.className}>
