@@ -164,7 +164,7 @@ export function DutyForm({ onDutyUpdate }: DutyFormProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Duty Logger</CardTitle>
+        <CardTitle>Duty & Activity Logger</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="space-y-6">

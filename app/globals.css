@@ -36,14 +36,7 @@
   }
 }
 
-.animate-in {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.animate-out {
-  animation: fadeOut 0.5s ease-out;
-}
-
+/* Custom Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -55,27 +48,93 @@
   }
 }
 
-@keyframes fadeOut {
+@keyframes slideIn {
   from {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-20px);
+    opacity: 0;
   }
   to {
-    opacity: 0;
-    transform: translateY(10px);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-.glass-card {
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+/* Glass Effect */
+.glass-morphism {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
 }
 
-.hover-scale {
-  transition: transform 0.2s ease;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.hover-scale:hover {
-  transform: scale(1.02);
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effects */
+.button-hover {
+  transition: all 0.3s ease;
+}
+
+.button-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent;
+}
+
+/* Page Transitions */
+.page-transition {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Table Styles */
+.table-row-hover {
+  transition: all 0.2s ease;
+}
+
+.table-row-hover:hover {
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* Custom Focus Rings */
+.focus-ring {
+  @apply focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none;
 }
