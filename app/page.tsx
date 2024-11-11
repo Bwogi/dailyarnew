@@ -25,7 +25,7 @@ export default function LandingPage() {
             Streamline your security operations with our comprehensive duty
             logging and incident reporting system.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 flex-wrap">
             <Link href="/duty-logger">
               <Button size="lg" className="px-8">
                 Start Logging
@@ -149,7 +149,7 @@ export default function LandingPage() {
           <p className="text-xl mb-8 opacity-90">
             Start managing your security operations more effectively today.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 flex-wrap">
             <Link href="/duty-logger">
               <Button
                 size="lg"
